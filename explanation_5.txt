@@ -1,0 +1,13 @@
+# Explaination:
+# We are using a linked list as block chain and a hashmap 
+# as storage for hash-block pairs, so that we'll find a block
+# with its hash for O(1) time complexity.
+# And the time complexity for each actions in linked list are:
+# Prepend: O(1)
+# Append: O(n)
+# Search: O(n)
+# Pop: O(1)
+# Remove: O(n)
+# Insert: O(n)
+# Size: O(n)
+# The space complexity is O(n + n) = O(n)

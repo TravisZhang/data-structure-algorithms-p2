@@ -1,0 +1,11 @@
+# Explanation:
+# The huffman encoding is basically trying to build a binary tree 
+# with each charactor on each leaf. And its path to leaf represents the code 
+# of the charactor on the leaf. So What I need to do is first sort them in 
+# a priority queue by their appearing frequence, and then extract 
+# two nodes with minimum numbers as a tree's left and right leaf, and 
+# the sum as the tree's root value, then insert the tree's root into
+# the queue. Repeat this process for leaf_num - 1 times, and the last node
+# in the queue is the root of the huffman tree.
+# So the time complexity is O((n - 1) * 2 * nlog(n) + 1) = O(n^2log(n)).
+# The space complexity is O(n)

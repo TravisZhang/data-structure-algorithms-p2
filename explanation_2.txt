@@ -1,0 +1,4 @@
+# Explanation:
+# Obviously we should iteratively go through all possible directories to find
+# files with same suffix. The time complexity is O(n^n), because there are n levels
+# and for each level we have m sub-dirs. The space complexity is also O(n^n).

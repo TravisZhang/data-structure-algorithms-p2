@@ -1,0 +1,9 @@
+# Explaination:
+# We want to record each element's appearance, so we best use dict()
+# to store it. When finding union, we need to find all the elemnets
+# that appeared at least once. When finding intersection, we need to
+# find element that both appeared in list1 and list2.
+# The time complexities are:
+# Union: O(n), since we are going through elements of the two lists at the same time
+# Intersection: O(n), since we first go through list1, then go through list2
+# The space complexity for both is O(n)
