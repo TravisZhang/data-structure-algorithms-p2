@@ -3,11 +3,12 @@
 # as storage for hash-block pairs, so that we'll find a block
 # with its hash for O(1) time complexity.
 # And the time complexity for each actions in linked list are:
-# Prepend: O(1)
-# Append: O(n)
-# Search: O(n)
-# Pop: O(1)
-# Remove: O(n)
-# Insert: O(n)
-# Size: O(n)
-# The space complexity is O(n + n) = O(n)
+# Prepend: O(1), since the head is always recorded.
+# Append: O(n), since we have to go through all the n nodes to find the tail.
+# Search: O(n), since in worst case scenario we have to go through all the n nodes to find the node.
+# Pop: O(1), since the head is always recorded.
+# Remove: O(n), since in worst case scenario we have to go through all the n nodes to find the node.
+# Insert: O(n), since we have to go through all the n nodes to find the right position to insert.
+# Size: O(n), since we have to go through all the n nodes to count the size.
+# The space complexity is O(n + n) = O(n), since there are n modes in the block chain
+# and n members in the hashmap for n [hash block] pairs.

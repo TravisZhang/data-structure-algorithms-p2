@@ -1,6 +1,9 @@
 # Explanation:
 # It's very similar to the File Recursion one, which you have to 
 # implement a recursive function to reach the deepest node. So the
-# time complexity is also O(n^2), since you have n groups, and each
-# group has n groups and users.
-# And the space compleity is also O(n^2).
+# time complexity is also O(n*m), since you have n groups, and each
+# group has m sub groups and users, and in worst case scenario, 
+# you have to traverse all the groups and their sub elements 
+# to find out if the user exists in those elements.
+# And the space compleity is also O(n*m) for storing the above elements
+# while finding the user.

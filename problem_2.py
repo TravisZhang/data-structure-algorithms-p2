@@ -8,8 +8,8 @@ def iter_fun(suffix, path, output):
     # level_list = sorted(os.listdir(path)) 
     level_list = os.listdir(path)
     for i in range(len(level_list)):
-      iter_fun(suffix, path + "/" + level_list[i], output)
-
+      # iter_fun(suffix, path + "/" + level_list[i], output)
+      iter_fun(suffix, os.path.join(path, level_list[i]), output)
   pass
 
 def find_files(suffix, path):

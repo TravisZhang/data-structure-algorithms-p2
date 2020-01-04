@@ -1,4 +1,7 @@
 # Explanation:
 # Obviously we should iteratively go through all possible directories to find
-# files with same suffix. The time complexity is O(n^n), because there are n levels
-# and for each level we have m sub-dirs. The space complexity is also O(n^n).
+# files with same suffix. The time complexity is O(n*m), because in worst-case scenario, 
+# there are n files and sub-directories for each level, and there are m levels, and we 
+# need to go through all files and sub-directries to find the files with input suffix.
+# The space complexity is O(n), because there are totally n files with the right suffix,
+# and we need to hold the paths for all of them while finding them.

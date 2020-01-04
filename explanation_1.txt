@@ -6,6 +6,7 @@
 # of bubble sort, which makes the bigger/smaller one at front. If I use this method, I won't have to sort every
 # time I visit, just put it at front. So the most suitable structure for this may not be a dict, but a queue.
 # I lift one to head when its been visited, and remove the tail when it's above the capacity, which costs O(1). 
-# However, I still need O(n) to find the item because it's a linked list. If I use array to store, I will need 
-# only O(1) to find the item, but O(n) to put it at head. The time complexity for get() is O(n), for
-# set() is O(1). And the space complexity for get() is O(n), for set() is O(1).
+# However, I still need O(n) to find the item because it's a linked list. So I added a dictionary 
+# to record each (key, node) pairs, so that It will cost only O(1) to find a node with given key.
+# So all the actions eventually cost O(1) each for time complexity. and since I used two data structures,
+# each to store n datas, the space comlexity is O(2 * n) = O(n). 

@@ -8,4 +8,6 @@
 # the queue. Repeat this process for leaf_num - 1 times, and the last node
 # in the queue is the root of the huffman tree.
 # So the time complexity is O((n - 1) * 2 * nlog(n) + 1) = O(n^2log(n)).
-# The space complexity is O(n)
+# The space complexity is O(n), since we have n type of charactors to
+# store in the tree, in worst case scenario, the tree is a full binary tree
+# and there are n + n/2 + n/4 + ... + 1 = 2*n-1 nodes.

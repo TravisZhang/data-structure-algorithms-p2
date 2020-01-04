@@ -6,4 +6,9 @@
 # The time complexities are:
 # Union: O(n), since we are going through elements of the two lists at the same time
 # Intersection: O(n), since we first go through list1, then go through list2
-# The space complexity for both is O(n)
+# The space complexity for Union is O(n), since there are total n elemnets in two
+# lists, and in worst case scenario each element is different, so you need a dict
+# of size n to store them.
+# The space complexity for Intersection is O(n), since there are n elements in list1,
+# and in worst case scenario each element is different, so you need a dict
+# of size n to store them.
